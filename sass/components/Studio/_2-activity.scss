@@ -1,0 +1,36 @@
+.activity-section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.activity-list {
+	display: flex;
+
+	.item {
+		position: relative;
+	}
+
+	.item + .item {
+		margin-left: 30px;
+	}
+
+	.tittle {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		margin: 0;
+		padding-top: 27px;
+		padding-bottom: 27px;
+
+		color: $white-text-color;
+		background-color: rgba(47, 48, 58, 0.8);
+
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}

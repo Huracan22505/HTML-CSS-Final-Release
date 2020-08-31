@@ -1,0 +1,48 @@
+.principles-bg {
+	margin-bottom: 30px;
+
+	width: 270px;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $secondary-bcg-color;
+}
+
+.principles-icon {
+	width: 70px;
+	height: 70px;
+}
+
+.principles-list {
+	display: flex;
+
+	.item {
+		width: 270px;
+	}
+
+	& .item + .item {
+		margin-left: 30px;
+	}
+
+	.tittle {
+		margin-top: 0;
+		margin-bottom: 10px;
+
+		color: $primary-text-color;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		text-transform: uppercase;
+	}
+
+	.text {
+		margin-top: 0;
+		margin-bottom: 0;
+
+		color: $secondary-text-color;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.71;
+	}
+}

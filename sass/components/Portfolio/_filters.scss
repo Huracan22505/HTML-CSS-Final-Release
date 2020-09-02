@@ -1,15 +1,19 @@
-.portfolio-section {
-	padding-bottom: 94px;
-}
-
 .filters {
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
 
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 
-	.item + .item {
-		margin-left: 8px;
+	.item {
+		margin-bottom: 15px;
+	}
+
+	.item:not(:last-child) {
+		margin-right: 8px;
+	}
+
+	.item:nth-last-child(-n + 2) {
+		margin-bottom: 0;
 	}
 
 	.button {

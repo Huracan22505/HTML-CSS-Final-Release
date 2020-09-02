@@ -112,12 +112,26 @@ header {
 	}
 }
 
+/* Mobile Menu Button */
+
 .menu-button {
 	display: inline-flex;
 	margin: 0;
 	padding: 0;
 	border: none;
 	background-color: transparent;
+}
+
+.menu-button .icon-cross {
+	display: none;
+}
+
+.menu-button.is-open .icon-cross {
+	display: block;
+}
+
+.menu-button.is-open .icon-menu {
+	display: none;
 }
 
 /* Contacts */

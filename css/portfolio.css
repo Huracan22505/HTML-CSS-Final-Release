@@ -243,6 +243,7 @@ header {
   border-radius: 2px;
 }
 
+/* Mobile Menu Button */
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -251,6 +252,18 @@ header {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 /* Contacts */

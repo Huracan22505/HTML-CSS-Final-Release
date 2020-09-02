@@ -258,12 +258,16 @@ header {
   display: none;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-button .icon-menu {
   display: block;
 }
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
 }
 
 /* Contacts */

@@ -61,12 +61,20 @@ img {
 }
 
 section {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }
 
 .section-tittle {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
   font-weight: 700;
   font-size: 36px;
@@ -74,12 +82,42 @@ section {
   text-align: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-tittle {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-tittle {
+    margin-bottom: 50px;
+  }
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 textarea {
@@ -109,9 +147,31 @@ header {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: center;
+  }
+}
+
 .logo.padding {
   padding-top: 24px;
   padding-bottom: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo.padding {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo.padding {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 
 .logo-accent {
@@ -126,10 +186,16 @@ header {
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 85px;
+  display: none;
+  margin-left: 88px;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .site-nav .item {
@@ -180,6 +246,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  display: none;
   margin-left: 305px;
 }
 
@@ -226,18 +293,66 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 /* Contacts */
 .footer-container-contacts {
-  margin-right: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container-contacts {
+    margin-right: 70px;
+  }
 }
 
 .f-contacts {
-  min-width: 231px;
+  min-width: 232px;
 }
 
 .f-contacts .link {
@@ -248,7 +363,14 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-align: center;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .f-contacts .link {
+    text-align: start;
+  }
 }
 
 .f-contacts .town {
@@ -258,18 +380,36 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  text-align: center;
   text-decoration: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .f-contacts .town {
+    text-align: start;
+  }
+}
+
 /* Networks */
+.footer-network-container {
+  margin-bottom: 60px;
+}
+
 .subscription {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription {
+    text-align: start;
+  }
 }
 
 .footer-icon {
@@ -312,19 +452,55 @@ header {
 
 /* Form */
 .footer-form {
-  margin-left: 93px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    width: 100%;
+    margin-left: 90px;
+    margin-right: 63px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: block;
+    margin-left: 93px;
+  }
 }
 
 .footer-input {
   padding: 15px 16px;
-  margin-right: 5px;
-  min-width: 358px;
+  width: 450px;
   background-color: #2f303a;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-input {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    margin-right: 5px;
+    width: 358px;
+  }
 }
 
 .footer-input::-webkit-input-placeholder {
@@ -372,7 +548,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 28px;
-  min-width: 200px;
+  width: 200px;
   height: 50px;
   color: #ffffff;
   background-color: #2196f3;

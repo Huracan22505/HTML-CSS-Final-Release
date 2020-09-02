@@ -15,15 +15,35 @@ header {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
+
 	text-decoration: none;
+
+	@media screen and (max-width: 1199px) {
+		font-size: 24px;
+		line-height: 1.17;
+		text-align: center;
+	}
 
 	&.padding {
 		padding-top: 24px;
 		padding-bottom: 25px;
+
+		@media screen and (max-width: 767px) {
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+			padding-top: 26px;
+			padding-bottom: 26px;
+		}
 	}
 
 	&-accent {
 		color: $accent-text-color;
+	}
+
+	@media screen and (min-width: 768px) {
 	}
 }
 
@@ -34,9 +54,13 @@ header {
 }
 
 .site-nav {
-	display: flex;
+	display: none;
 
-	margin-left: 85px;
+	margin-left: 88px;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+	}
 
 	& .item {
 		margin-right: 50px;
@@ -92,6 +116,8 @@ header {
 
 .h-contacts {
 	display: flex;
+	display: none;
+
 	margin-left: 305px;
 
 	.item + .item {

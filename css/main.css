@@ -127,16 +127,8 @@ textarea {
 }
 
 header {
+  position: relative;
   border-bottom: 1px solid #ececec;
-}
-
-.header {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* Logo */
@@ -218,6 +210,20 @@ header {
 }
 
 .menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: tomato;
+  text-align: center;
+}
+
+.menu-container.is-open {
   display: block;
 }
 

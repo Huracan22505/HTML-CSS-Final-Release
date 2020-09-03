@@ -1,12 +1,8 @@
 header {
+	position: relative;
+
 	border-bottom: 1px solid #ececec;
 }
-
-.header {
-	display: inline-flex;
-	align-items: center;
-}
-
 /* Logo */
 
 .logo {
@@ -62,9 +58,12 @@ header {
 
 .menu-button {
 	display: inline-flex;
+
 	margin: 0;
 	padding: 0;
+
 	border: none;
+
 	background-color: transparent;
 }
 
@@ -78,6 +77,23 @@ header {
 
 .menu-button.is-open .icon-cross {
 	display: block;
+}
+
+.menu-container {
+	display: none;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+
+	background-color: tomato;
+
+	text-align: center;
+
+	&.is-open {
+		display: block;
+	}
 }
 
 .site-nav {

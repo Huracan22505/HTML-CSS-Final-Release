@@ -51,6 +51,33 @@ header {
 
 .main-nav {
 	display: flex;
+
+	@media screen and (max-width: 767px) {
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+/* Mobile Menu Button */
+
+.menu-button {
+	display: inline-flex;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+}
+
+.menu-button .icon-cross {
+	display: none;
+}
+
+.menu-button.is-open .icon-menu {
+	display: none;
+}
+
+.menu-button.is-open .icon-cross {
+	display: block;
 }
 
 .site-nav {
@@ -110,32 +137,6 @@ header {
 
 		border-radius: 2px;
 	}
-}
-
-/* Mobile Menu Button */
-
-.menu-button {
-	display: inline-flex;
-	margin: 0;
-	padding: 0;
-	border: none;
-	background-color: transparent;
-}
-
-.menu-button .icon-cross {
-	display: none;
-}
-
-.menu-button .icon-menu {
-	display: block;
-}
-
-.menu-button.is-open .icon-menu {
-	display: none;
-}
-
-.menu-button.is-open .icon-cross {
-	display: block;
 }
 
 /* Contacts */

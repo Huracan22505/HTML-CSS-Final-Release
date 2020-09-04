@@ -52,10 +52,6 @@ header {
 		align-items: center;
 		justify-content: space-between;
 	}
-
-	@media screen and (min-width: 768px) {
-		align-items: baseline;
-	}
 }
 
 /* Menu */
@@ -96,7 +92,8 @@ header {
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
 
-		margin: 0;
+		margin-bottom: 0;
+		margin-left: 88px;
 	}
 
 	.item + .item {
@@ -155,6 +152,10 @@ header {
 		background-color: $accent-text-color;
 
 		border-radius: 2px;
+
+		@media screen and (min-width: 768px) {
+			bottom: -1px;
+		}
 	}
 }
 
@@ -167,13 +168,28 @@ header {
 
 	.item + .item {
 		margin-top: 16px;
+
+		@media screen and (min-width: 768px) {
+			margin-top: 10px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			margin-top: 0;
+			margin-left: 30px;
+		}
 	}
 
 	@media screen and (min-width: 768px) {
-		padding-top: 21px;
-		padding-bottom: 21px;
-
 		align-items: flex-start;
+		justify-content: center;
+
+		margin-left: 80px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		flex-direction: row;
+
+		margin-left: 305px;
 	}
 }
 
@@ -190,6 +206,14 @@ header {
 	@media screen and (min-width: 768px) {
 		font-size: 12px;
 		line-height: 1.17;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+
+		font-size: 14px;
+		line-height: 1.14;
 	}
 
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

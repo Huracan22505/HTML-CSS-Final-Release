@@ -889,6 +889,13 @@ header {
   line-height: 1.88;
 }
 
+@media screen and (max-width: 379px) {
+  .card-tittle-container .type-resource {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
 .box-text-hover {
   position: absolute;
   width: 100%;

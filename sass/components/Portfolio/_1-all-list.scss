@@ -75,6 +75,11 @@
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 1.88;
+
+		@media screen and (max-width: 379px) {
+			font-size: 14px;
+			line-height: 1.5;
+		}
 	}
 }
 

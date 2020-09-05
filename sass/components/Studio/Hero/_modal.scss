@@ -89,6 +89,10 @@
 	width: 100%;
 	padding: 40px;
 
+	@media screen and (max-width: 479px) {
+		padding: 40px 30px;
+	}
+
 	@media screen and (min-width: 1200px) {
 		width: 528px;
 	}

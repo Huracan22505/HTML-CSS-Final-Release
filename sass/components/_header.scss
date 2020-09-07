@@ -22,7 +22,7 @@ header {
 
 	&.padding {
 		padding-top: 24px;
-		padding-bottom: 25px;
+		padding-bottom: 24px;
 
 		@media screen and (max-width: 767px) {
 			padding-top: 16px;
@@ -190,6 +190,8 @@ header {
 	@media screen and (min-width: 1200px) {
 		flex-direction: row;
 
+		align-items: center;
+
 		margin-left: 305px;
 	}
 }
@@ -210,9 +212,6 @@ header {
 	}
 
 	@media screen and (min-width: 1200px) {
-		padding-top: 32px;
-		padding-bottom: 32px;
-
 		font-size: 14px;
 		line-height: 1.14;
 	}

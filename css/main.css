@@ -155,7 +155,7 @@ header {
 
 .logo.padding {
   padding-top: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 }
 
 @media screen and (max-width: 767px) {
@@ -360,6 +360,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-left: 305px;
   }
 }
@@ -385,8 +388,6 @@ header {
 
 @media screen and (min-width: 1200px) {
   .h-contacts .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -937,6 +938,13 @@ header {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .form-data {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }
 
 .form-field {

@@ -38,7 +38,9 @@
 	flex-direction: column;
 	justify-content: center;
 
-	margin-bottom: 60px;
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 60px;
+	}
 
 	@media screen and (min-width: 1200px) {
 		margin-right: 70px;
@@ -87,7 +89,9 @@
 /* Networks */
 
 .footer-network-container {
-	margin-bottom: 60px;
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 60px;
+	}
 }
 
 .subscription {

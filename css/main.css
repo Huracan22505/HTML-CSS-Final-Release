@@ -517,7 +517,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-container-contacts {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -566,8 +571,10 @@ header {
 }
 
 /* Networks */
-.footer-network-container {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-network-container {
+    margin-bottom: 60px;
+  }
 }
 
 .subscription {
